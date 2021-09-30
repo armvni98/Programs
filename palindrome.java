@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class palindrome {
 
 	String a = "";		//original variable
@@ -12,24 +10,19 @@ public class palindrome {
 		
 		}
 		
-		System.out.println("rev:" + rev);
-		
 		if (rev.equals(x)) {
-			System.out.print("is a palindrome");
 				return true;
 		}
 		else {
-			System.out.print("not a palindrome");
 			return false;
 		}
 	}
 	
 	
+	
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		String a = scan.next();
 		
-		palindrome.palindrome(a);
+		System.out.print(palindrome("racecar"));
 		
 	}
 
